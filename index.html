@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BâtisPlan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1f2f46;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header img {
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      margin: 0.5rem 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #1f2f46;
+      border-bottom: 2px solid #1f2f46;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .services {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .service {
+      background: white;
+      padding: 1.5rem;
+      border-left: 5px solid #3b82f6;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .contact {
+      background-color: #1f2f46;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .contact a {
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #111827;
+      color: #94a3b8;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      width: 300px;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    input[type="submit"] {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Remplacez par l'URL de votre logo -->
+    <img src="logo-batisplan.png" alt="Logo BâtisPlan">
+    <h1>BÂTISPLAN</h1>
+    <p>Des plans précis pour tous vos projets de bâtiment</p>
+  </header>
+
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Relevés de mesures sur site</h3>
+        <p>Intervention rapide sur site pour prise de mesures fiables, même dans les environnements complexes.</p>
+      </div>
+      <div class="service">
+        <h3>Dessins 2D professionnels</h3>
+        <p>Plans réalisés avec précision sur AutoCAD pour tous types de projets de construction ou rénovation.</p>
+      </div>
+      <div class="service">
+        <h3>Plans adaptés à tous les corps de métier</h3>
+        <p>Des documents clairs et adaptés aux attentes des artisans, architectes, bureaux d'études ou maîtres d’œuvre.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos de BâtisPlan</h2>
+    <p>BâtisPlan est une micro-entreprise spécialisée dans le relevé de mesures sur site et la production de plans 2D. Nous intervenons sur tous types de projets, avec rigueur, discrétion et professionnalisme. Notre adaptabilité est notre force : chaque chantier est unique, et nous savons nous y adapter.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Pour toute demande de devis ou d'information, contactez-nous par e-mail à :<br>
+    <a href="mailto:contact@batisplan.fr">contact@batisplan.fr</a><br><br>
+    Zone d'intervention : **La France**</p>
+    <form action="mailto:contact@batisplan.fr" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre e-mail" required>
+      <textarea name="message" placeholder="Votre message" rows="4" required></textarea>
+      <input type="submit" value="Envoyer">
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 BâtisPlan. Tous droits réservés.
+  </footer>
+</body>
+</html>
